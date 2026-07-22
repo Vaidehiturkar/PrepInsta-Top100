@@ -11,11 +11,9 @@ public class Q02_EvenOrOdd {
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
 
-        if (n % 2 == 0) {
-            System.out.println("Even");
-        } else {
-            System.out.println("Odd");
-        }
+        String result = (n % 2 == 0) ? "Even" : "Odd";
+
+        System.out.println(result);
 
         sc.close();
     }
