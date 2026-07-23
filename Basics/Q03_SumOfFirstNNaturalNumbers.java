@@ -10,7 +10,11 @@ public class Q03_SumOfFirstNNaturalNumbers {
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
 
-        int sum = n * (n + 1) / 2;
+        int sum = 0;
+
+        for (int i = 1; i <= n; i++) {
+            sum += i;
+        }
 
         System.out.println("Sum = " + sum);
 
